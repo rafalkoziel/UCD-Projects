@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<link rel="Shortcut icon" href="logos/logo.png" />
+		<link rel="stylesheet" type="text/css" href="about.css"/>
+		<meta name="viewport" content="width=device-width" />
+		<title>UCD VC Contact</title>
+	</head>
+	<body>
+	<style>
+       #map {
+        height: 400px;
+        width: 100%;
+       }
+    </style>
+		<!-- <div><p>T E S T</p></div> -->
+		<div class="about">
+		<h1>UCD Volleyball Club</h1>
+		</div>
+		<div class="sideBar">
+				<a href="homepage.html">Home</a>
+				<a href="about.html">About</a>
+				<a href="guide.html">Guide</a>
+				<a href="gallery.html">Gallery</a>
+				<a href="contact.html">Contact</a>
+				<a href="form.html">Join</a>
+				<img src="logos/logo.jpg">
+		</div>
+		<div class="textbox">
+			<h2>Where to find us</h2>
+			<div id="map">
+				<script>
+				function initMap() {
+					var uluru = {lat: 53.308508, lng: -6.229197};
+					var map = new google.maps.Map(document.getElementById('map'), {
+					zoom: 16,
+					center: uluru
+					});
+					var marker = new google.maps.Marker({
+					position: uluru,
+					map: map
+					});
+				}
+			</script>
+			<script async defer
+			src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD_P17L-fVQYBAON68je3zlHpHnGjRE_7s&callback=initMap">
+			</script>
+			</div>
+			<p><b>Address:</b> Ucd Student Club, UCD Student Club, University College Dublin, Stillorgan Road, Dublin South, Dublin 4</p>
+			<p><b>If you still have some questions please call, email us or pop up to one of the training sessions!</b></p>
+			<p><b>Trainings take place on every monday from 8-10 PM in hall B</b><br>
+			<b>Phone number:</b> 085 777 8888<br><b>E-mail:</b> ucdvolleyball@gmail.com</p>
+		</div>
+	</body>
+</html>	
